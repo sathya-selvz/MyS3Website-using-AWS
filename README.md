@@ -57,6 +57,11 @@ By the end of this project:
 * Open the **S3 bucket endpoint** or **CloudFront URL** in a browser.
 * You should see your website live! 🎉
 
+### 6. Output
+* Screenshot (32).png
+* Screenshot (33).png
+* Screenshot (34).png
+
 ---
 
 ## 🧪 Common Errors & Fixes
