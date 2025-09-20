@@ -58,7 +58,7 @@ By the end of this project:
 * You should see your website live! 🎉
 
 ### 6. Output
-* Screenshot (32).png
+* https://github.com/sathya-selvz/MyS3Website-using-AWS/blob/main/Screenshot%20(32).png
 * Screenshot (33).png
 * Screenshot (34).png
 
