@@ -1,0 +1,114 @@
+/* Simple responsive style */
+:root{
+  --bg:#f6f8fb;
+  --primary:#0b63d6;
+  --muted:#666;
+  --card:#ffffff;
+  --radius:12px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--muted);
+  line-height:1.5;
+}
+
+.container{
+  width:95%;
+  max-width:1000px;
+  margin:0 auto;
+  padding:20px 0;
+}
+
+/* header */
+.site-header{
+  background:linear-gradient(90deg,#ffffff80, #ffffff);
+  box-shadow:0 1px 4px rgba(0,0,0,0.04);
+}
+.site-header .container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.logo{
+  margin:0;
+  color:var(--primary);
+  font-size:1.2rem;
+}
+nav a{
+  margin-left:16px;
+  text-decoration:none;
+  color:var(--muted);
+  font-weight:600;
+}
+nav a:hover{color:var(--primary)}
+
+/* hero */
+.hero{
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:28px;
+  margin:20px 0;
+  box-shadow:0 6px 18px rgba(15,30,50,0.05);
+}
+.hero h2{margin-top:0;color:#0a254d}
+.btn{
+  display:inline-block;
+  margin-top:12px;
+  padding:10px 16px;
+  border-radius:10px;
+  background:var(--primary);
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* cards */
+.cards{
+  display:grid;
+  gap:16px;
+  grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+}
+.card{
+  background:var(--card);
+  padding:18px;
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(15,30,50,0.04);
+}
+
+/* content */
+.content{
+  background:var(--card);
+  padding:18px;
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(15,30,50,0.04);
+}
+
+/* form */
+form label{display:block;margin-top:12px;font-weight:600}
+input[type="text"], textarea{
+  width:100%;
+  padding:8px;
+  margin-top:6px;
+  border-radius:8px;
+  border:1px solid #e5e7eb;
+}
+textarea{min-height:100px;resize:vertical}
+
+/* footer */
+.site-footer{
+  margin-top:28px;
+  padding:18px 0;
+  text-align:center;
+  color:#8b98a8;
+  font-size:0.95rem;
+}
+
+/* small screens */
+@media (max-width:600px){
+  .site-header .container{flex-direction:column;gap:12px}
+  nav{display:flex;gap:8px}
+}

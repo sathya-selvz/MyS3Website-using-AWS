@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - SKC COLLEGE</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">SKC COLLEGE</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="content">
+      <h2>Contact Us</h2>
+      <p>If you have questions or want admission info, reach out:</p>
+
+      <ul class="contact-list">
+        <li><strong>Phone:</strong> +91-XXXXXXXXXX</li>
+        <li><strong>Email:</strong> admissions@example.edu</li>
+        <li><strong>Address:</strong> 123 College Road, City, State</li>
+      </ul>
+
+      <h3>Quick Message</h3>
+      <form onsubmit="alert('This is a static demo. In a real site you would post this to a server.'); return false;">
+        <label>
+          Name<br />
+          <input type="text" placeholder="Your name" required />
+        </label>
+        <label>
+          Message<br />
+          <textarea placeholder="Write a message" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> SKC COLLEGE • All rights reserved</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My College Brochure</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">SKC COLLEGE</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Welcome to SKC COLLEGE</h2>
+      <p>Quality education in Computer Science, IT, and more. Explore our courses and contact us for admission details.</p>
+      <a class="btn" href="about.html">Learn More</a>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+        <h3>Undergraduate Programs</h3>
+        <p>BSc, BCA and other undergraduate courses with industry-focused curriculum.</p>
+      </article>
+
+      <article class="card">
+        <h3>Postgraduate Programs</h3>
+        <p>MSc Computer Science, MCA and research-oriented masters programs.</p>
+      </article>
+
+      <article class="card">
+        <h3>Facilities</h3>
+        <p>Computer labs, library, campus Wi-Fi, placement assistance, and clubs.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> YORYA COLLEGE • All rights reserved</p>
+    </div>
+  </footer>
+
+  <script>
+    // simple script to set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
